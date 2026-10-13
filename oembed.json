@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "title": "Race to the Summit",
+  "provider_name": "Kurv",
+  "provider_url": "https://ggrace-kurv.github.io/kurv-countdown/",
+  "width": 600,
+  "height": 140,
+  "html": "<iframe src=\"https://ggrace-kurv.github.io/kurv-countdown/\" width=\"600\" height=\"140\" style=\"border:0\" frameborder=\"0\" scrolling=\"no\"></iframe>"
+}
