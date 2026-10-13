@@ -1,0 +1,14 @@
+name: kurv-countdown
+title: Kurv Countdown
+description: Live "Race to the Summit" countdown block.
+visibility: private
+organization: ORG_ID_HERE
+script: ./src/index.tsx
+scopes: []
+target: space
+blocks:
+    - id: countdown
+      title: Countdown
+      description: Live countdown timer
+      urlUnfurl:
+          - https://ggrace-kurv.github.io/kurv-countdown/**

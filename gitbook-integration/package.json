@@ -1,0 +1,12 @@
+{
+    "name": "kurv-countdown-gitbook-integration",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@gitbook/runtime": "*"
+    },
+    "scripts": {
+        "check": "gitbook check",
+        "publish-integration": "gitbook publish ."
+    }
+}

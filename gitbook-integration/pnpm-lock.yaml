@@ -1,0 +1,43 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@gitbook/runtime':
+        specifier: '*'
+        version: 0.23.3
+
+packages:
+
+  '@gitbook/api@0.205.0':
+    resolution: {integrity: sha512-jjkPAhPw6tja1N0ZPKqVsaV+opN8IS7yP1oZHHbcacZ477angPCo9YqiJJYWAl0tQ5OcKTuQbrsqhZSuwKM2Kw==}
+
+  '@gitbook/runtime@0.23.3':
+    resolution: {integrity: sha512-ceMAR+mFr3/E3HSaIhzdllVAPTg4mtoceYDLlDQlaXF6EilPq2lZdeNPAB78FW2RH3Q4al9LCl64QHbTvHYJAQ==}
+
+  event-iterator@2.0.0:
+    resolution: {integrity: sha512-KGft0ldl31BZVV//jj+IAIGCxkvvUkkON+ScH6zfoX+l+omX6001ggyRSpI0Io2Hlro0ThXotswCtfzS8UkIiQ==}
+
+  eventsource-parser@3.1.1:
+    resolution: {integrity: sha512-EKN1vKAMcZ8MlYMpaNuxN6R9yakzH6uajHcHVTqWJzvu5pWw9DyhbP35HH8MVBQ+dZjAfDxk+A8NiR9KWaXiyQ==}
+    engines: {node: '>=18.0.0'}
+
+snapshots:
+
+  '@gitbook/api@0.205.0':
+    dependencies:
+      event-iterator: 2.0.0
+      eventsource-parser: 3.1.1
+
+  '@gitbook/runtime@0.23.3':
+    dependencies:
+      '@gitbook/api': 0.205.0
+
+  event-iterator@2.0.0: {}
+
+  eventsource-parser@3.1.1: {}
