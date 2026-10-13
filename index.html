@@ -33,7 +33,7 @@
   let timer;
   function tick() {
     let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
-    if (s === 0) { el.textContent = "Live"; el.style.color = "#FFA601"; clearInterval(timer); return; }
+    if (s === 0) { el.textContent = "The race has ended."; el.style.color = "#FFA601"; clearInterval(timer); return; }
     const d = Math.floor(s / 86400); s %= 86400;
     const h = Math.floor(s / 3600);  s %= 3600;
     const m = Math.floor(s / 60);    s %= 60;
