@@ -2,7 +2,7 @@ name: kurv-countdown
 title: Kurv Countdown
 description: Live "Race to the Summit" countdown block.
 visibility: private
-organization: ORG_ID_HERE
+organization: E2HqkxpiETXzp0weTq2i
 script: ./src/index.tsx
 scopes: []
 target: space
