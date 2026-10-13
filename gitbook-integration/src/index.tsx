@@ -19,7 +19,7 @@ const countdownBlock = createComponent<{ url?: string }>({
     async render(element) {
         return (
             <block>
-                <webframe source={{ url: element.props.url ?? COUNTDOWN_URL }} aspectRatio={600 / 160} />
+                <webframe source={{ url: element.props.url ?? COUNTDOWN_URL }} aspectRatio={4.6} />
             </block>
         );
     },

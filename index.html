@@ -17,13 +17,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    html, body { margin: 0; padding: 0; background: transparent; }
+    html, body { margin: 0; padding: 0; height: 100%; background: transparent; }
+    /* Sizes scale with frame width so the card always fills a fixed-aspect embed. */
+    #cd { box-sizing: border-box; height: 100%; display: flex; flex-direction: column; justify-content: center; }
   </style>
 </head>
 <body>
-<div id="cd" style="font-family:'Plus Jakarta Sans',sans-serif;text-align:center;padding:24px;background:#E8F9CE;color:#1B5E4E;border-radius:12px">
-  <div style="font-size:24px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#333138">Race to the Summit</div>
-  <div id="t" style="font-size:44px;font-weight:700;margin-top:6px">--</div>
+<div id="cd" style="font-family:'Plus Jakarta Sans',sans-serif;text-align:center;padding:2vw 3vw;background:#E8F9CE;color:#1B5E4E;border-radius:12px">
+  <div style="font-size:3.4vw;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#333138">Race to the Summit</div>
+  <div id="t" style="font-size:7.5vw;font-weight:700;margin-top:.6vw;line-height:1.15">--</div>
 </div>
 <script>
   const target = new Date("2026-10-31T09:00:00-04:00"); // 9:00 AM EDT
