@@ -17,9 +17,12 @@ const countdownBlock = createComponent<{ url?: string }>({
     },
 
     async render(element) {
+        // GitHub Pages sends max-age=600; a per-render query param keeps the frame fresh.
+        const src = new URL(element.props.url ?? COUNTDOWN_URL);
+        src.searchParams.set('v', Date.now().toString());
         return (
             <block>
-                <webframe source={{ url: element.props.url ?? COUNTDOWN_URL }} aspectRatio={4.6} />
+                <webframe source={{ url: src.toString() }} aspectRatio={4.6} />
             </block>
         );
     },
